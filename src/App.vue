@@ -5,6 +5,8 @@
 </template>
 
 <script setup lang="ts">
+import { appEnv } from '@/config'
+console.log(appEnv)
 const maxWindow = () => {
 }
 
