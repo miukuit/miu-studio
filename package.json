@@ -2,13 +2,11 @@
   "name": "miu-studio",
   "private": true,
   "version": "0.0.1",
-  "type": "module",
   "author": {
     "name": "Miu Studio",
     "email": "miukuit@miu.com"
   },
   "description": "Miu Studio",
-
   "main": ".vite/build/main.js",
   "scripts": {
     "dev": "cross-env VITE_APP_ENV=web vite --host",
@@ -19,8 +17,14 @@
     "make": "cross-env VITE_APP_ENV=app electron-forge make"
   },
   "dependencies": {
+    "axios": "^1.7.7",
     "electron-squirrel-startup": "^1.0.1",
-    "vue": "^3.5.10"
+    "naive-ui": "^2.40.1",
+    "normalize.css": "^8.0.1",
+    "pinia": "^2.2.4",
+    "pinia-plugin-persistedstate": "^4.1.1",
+    "vue": "^3.5.10",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.5.0",
@@ -39,9 +43,12 @@
     "eslint": "^9.12.0",
     "eslint-plugin-vue": "^9.29.0",
     "globals": "^15.11.0",
+    "sass": "^1.80.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.9.0",
+    "unplugin-auto-import": "^0.18.3",
+    "unplugin-vue-components": "^0.27.4",
     "vite": "^5.4.8",
     "vue-tsc": "^2.1.6"
   }

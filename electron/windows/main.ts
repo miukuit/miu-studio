@@ -13,6 +13,7 @@ export const createMainWindow = async () => {
       preload: path.join(__dirname, './preload.js'),
     }
   })
+  console.log(MAIN_WINDOW_VITE_DEV_SERVER_URL)
   if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {
     mainWindow.loadURL(MAIN_WINDOW_VITE_DEV_SERVER_URL)
     mainWindow.webContents.openDevTools()
